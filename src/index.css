@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-retro {
+    font-family: 'VT323', monospace;
+  }
+  .font-mono-code {
+    font-family: 'Space Mono', ui-monospace, monospace;
+  }
+  .retro-box {
+    border: 2px solid #323b44;
+    box-shadow: 3px 3px 0px #07090b;
+  }
+  .retro-box-sm {
+    border: 2px solid #323b44;
+    box-shadow: 2px 2px 0px #07090b;
+  }
+  .retro-box-lg {
+    border: 3px solid #323b44;
+    box-shadow: 5px 5px 0px #07090b;
+  }
+  .retro-box-inset {
+    border: 2px solid #323b44;
+    box-shadow: inset 2px 2px 0px rgba(0,0,0,0.4);
+  }
+  .retro-btn {
+    border: 2px solid #323b44;
+    box-shadow: 3px 3px 0px #07090b;
+    transition: transform 0.05s ease, box-shadow 0.05s ease;
+  }
+  .retro-btn:hover:not(:disabled) {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px #07090b;
+  }
+  .retro-btn:active:not(:disabled) {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #07090b;
+  }
+}
+
+/* Ensure math rendering doesn't overflow horizontally on mobile and stays legible in dark mode */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+  margin: 0.5rem 0 !important;
+}
+
+.katex {
+  font-size: 1.15em;
+  text-rendering: optimizeLegibility;
+  color: inherit;
+}

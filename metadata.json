@@ -1,0 +1,6 @@
+{
+  "name": "Laws of Exponents Reviewer",
+  "description": "Retro-style mathematics reviewer for mastering the Laws of Exponents through practice problems, procedural solutions, and randomized mock tests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
